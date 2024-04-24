@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Virus Slayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="instruction">
+      <h2>Instruction Virus Slayer</h2>
+      <p>
+        <ol>
+          <li>Input Username and click Play</li>
+          <li>Destroy Virus with D F J K Key</li>
+          <li>Reach High Score</li>
+          <li>Enjoy</li>
+        </ol>
+      </p>
+      <div id="input">
+        <input type="text" placeholder="   Input Username" id="inputan"><br>
+        <button type="button" id="play" disabled>Play</button>
+      </div>
+    </div>
+    <h1 id="countdown"></h1>
+    <div id="game">
+      <div id="playing" class="hide">
+        <div id="side">
+          <p>Time: <span id="time"></span></p>
+          <p>Score: <span id="score"></span></p>
+          <p>Fail: <span id="fail"></span></p>
+          <p>Player: <span id="player"></span></p>
+          <div id="kotak">
+            <h3>Virus Slayer</h3>
+            <div id="btn">
+              <button type="button" id="call-restart">Restart</button><br>
+              <button type="button" id="quit">Quit</button>
+            </div>
+          </div>
+        </div>
+        <img src="virus.png" id="img">
+        <canvas id="canvas" height="750" width="400"></canvas>
+      </div>
+      <div id="pause" class="hide">
+        <h3>Paused</h3>
+        <button type="button " id="continue">Continue</button>
+        <button type="button" id="restart1">Restart</button>
+      </div>
+      <div id="game-over" class="hide">
+        <h3>Game Over</h3>
+        <p>Time : <span id="time2"></span></p>
+        <p>Score : <span id="score2"></span></p>
+        <p>Player : <span id="player2"></span></p>
+        <button type="button" id="restart2">Restart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
